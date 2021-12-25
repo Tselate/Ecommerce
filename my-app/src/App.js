@@ -1,20 +1,11 @@
 import React from "react"
+import ProductSearch from "./Products"
+import "./App.css"
 
 function App() {
   return (
     <div>
-      <Header />
-
-      <Switch>
-            <Route exact path="/">
-                <Photos/>
-            </Route>
-            <Route path="/cart">
-                <Cart/>
-            </Route>
-        </Switch>
-     
-      
+    <ProductSearch/>
    </div>
   )
 }
