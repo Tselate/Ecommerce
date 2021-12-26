@@ -66,7 +66,7 @@ function ProductSearch () {
 
     
            <div className="resultDisplay">
-                    {itemsStored[0].map(item => (
+                    {itemsStored[0] ? itemsStored[0].map(item => (
                         <div className="itemCard" key={item.id}>
                             <div className="itemInfo">
                                 <img className="itemImg" src={item.image} alt="Item"/>
@@ -76,7 +76,7 @@ function ProductSearch () {
                             </div>
                         </div>
                      
-                    ))}
+                    )) : <div className="loading">Loading...</div>}
 
                </div>
         </div>

@@ -132,7 +132,15 @@ input {
 }
 
 .itemImg {
-   max-width: 80%;
+   max-width: 90%;
+   height: 200px;
+}
+
+.cartBtn {
+    background-color: rebeccapurple;
+    padding: 0.3em 0.5em;
+    margin-top: 0.5em;
+    border-radius: 5px;
 }
 
 /* ==============
