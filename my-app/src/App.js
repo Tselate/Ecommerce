@@ -1,12 +1,14 @@
 import React from "react"
-import ProductSearch from "./Products"
+import Products from "./Products"
+import Header from "./components/Header"
 import "./App.css"
 
 function App() {
   return (
-    <div>
-    <ProductSearch/>
-   </div>
+    <>
+      <Header/>
+      <Products/>
+    </>
   )
 }
 
