@@ -6,7 +6,7 @@ function Header() {
     return (
         <div>
         <header>
-            <Link to="/photo"><h2>Pic Some</h2></Link>            
+            {/* <Link to="/photo"><h2>Pic Some</h2></Link>             */}
         </header>
         </div>
     )

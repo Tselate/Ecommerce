@@ -31,6 +31,14 @@ function ProductSearch () {
         } 
     }
 
+    //Function to add product to cart 
+    function addProduct (e) {
+        console.log("Please add me")
+        console.log(e)
+        console.log(e.parentNode)
+      
+    }
+
    
 
     // Updated items stored in session storage as well as pagination and searched item in session storage
@@ -72,7 +80,7 @@ function ProductSearch () {
                                 <img className="itemImg" src={item.image} alt="Item"/>
                                 <p className="itemName">{item.title}</p>
                                 <p className="itemPrice">${item.price % 1 === 0 ? item.price + ".00" : item.price}</p>
-                                <button className="cartBtn">Add to Cart</button>
+                                <button className="cartBtn" onClick={addProduct}>Add to Cart</button>
                             </div>
                         </div>
                      
