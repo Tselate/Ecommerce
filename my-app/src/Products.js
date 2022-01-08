@@ -36,6 +36,8 @@ function ProductSearch () {
         console.log("Please add me")
         console.log(e)
         console.log(e.parentNode)
+        console.log(e.childElement)
+
       
     }
 
