@@ -37,6 +37,7 @@ function ProductSearch () {
         console.log(e)
         console.log(e.parentNode)
         console.log(e.childElement)
+        console.log(e.className)
 
       
     }
