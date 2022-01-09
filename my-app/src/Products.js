@@ -3,8 +3,10 @@ import React, {useState, useEffect} from "react"
 function ProductSearch () {
     const [item, setItem] = useState("")
     const [itemResults, setItemResults] = useState("")
+   
 
     const itemsStored = JSON.parse(sessionStorage.getItem("itemsKey")) || []
+    const cartItems = JSON.parse(sessionStorage.getItem('cartItemKey')) || []
 
     //On page load, load all of the products available
 
@@ -33,13 +35,10 @@ function ProductSearch () {
 
     //Function to add product to cart 
     function addProduct (e) {
-        console.log("Please add me")
-        console.log(e)
-        console.log(e.parentNode)
-        console.log(e.childElement)
-        console.log(e.className)
+        cartItems.push([e.target.parentNode.childNodes[0].src, e.target.parentNode.childNodes[1].innerHTML, e.target.parentNode.childNodes[2].innerHTML])
+        sessionStorage.setItem("cartItemKey", JSON.stringify(cartItems))
 
-      
+        console.log(cartItems)
     }
 
    
