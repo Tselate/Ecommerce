@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react"
+import Cart from "./Cart"
 
 function ProductSearch () {
     const [item, setItem] = useState("")
@@ -27,7 +28,6 @@ function ProductSearch () {
             const result = await fetch (url)
             const data = await result.json()
             setItemResults(data)
-            console.log(data)
         }catch(err) {
             alert("Item not found")
         } 
@@ -38,7 +38,7 @@ function ProductSearch () {
         cartItems.push([e.target.parentNode.childNodes[0].src, e.target.parentNode.childNodes[1].innerHTML, e.target.parentNode.childNodes[2].innerHTML])
         sessionStorage.setItem("cartItemKey", JSON.stringify(cartItems))
 
-        console.log(cartItems)
+        //console.log(cartItems)
     }
 
    
@@ -74,7 +74,8 @@ function ProductSearch () {
                </form>             
             </div>    
 
-    
+            <Cart/>
+
            <div className="resultDisplay">
                     {itemsStored[0] ? itemsStored[0].map(item => (
                         <div className="itemCard" key={item.id}>
