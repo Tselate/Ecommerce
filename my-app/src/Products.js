@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from "react"
-import Cart from "./Cart"
+import {Link} from "react-router-dom"
+import cart from "./components/cart-svgrepo-com.svg"
+
 
 function ProductSearch () {
     const [item, setItem] = useState("")
@@ -35,9 +37,11 @@ function ProductSearch () {
 
     //Function to add product to cart 
     function addProduct (e) {
+        console.log(e)
         cartItems.push([e.target.parentNode.childNodes[0].src, e.target.parentNode.childNodes[1].innerHTML, e.target.parentNode.childNodes[2].innerHTML])
         sessionStorage.setItem("cartItemKey", JSON.stringify(cartItems))
-
+        alert("Item has been added to your cart.")
+       // window.location.reload()
         //console.log(cartItems)
     }
 
@@ -55,7 +59,7 @@ function ProductSearch () {
     return (
         <div className="container"> 
            <div className="form-container" >
-           <h6 className="logo">SHAP TIL' U DROP</h6>
+           
                <form name="myForm" className="search-form" onSubmit={itemLookUp}>
                     <select 
                         placeholder="Search here..."
@@ -71,11 +75,11 @@ function ProductSearch () {
                     </select>
 
                     <button className="searchBtn" type="submit">Search</button>
-               </form>             
+               </form>   
+               <Link to="/cart"><img className="cart" src={cart} alt="cart"/></Link>           
             </div>    
 
-            <Cart/>
-
+    
            <div className="resultDisplay">
                     {itemsStored[0] ? itemsStored[0].map(item => (
                         <div className="itemCard" key={item.id}>

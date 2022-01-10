@@ -1,13 +1,13 @@
 import React from "react"
 import {Link} from "react-router-dom"
+import cart from "./cart-svgrepo-com.svg"
 
 
 function Header() {
     return (
-        <div>
-        <header>
-            {/* <Link to="/photo"><h2>Pic Some</h2></Link>             */}
-        </header>
+        <div className="header-container">
+            <Link to="/" style={{ textDecoration: 'none' }}><h6 className="logo">SHAP TIL' U DROP</h6></Link> 
+           
         </div>
     )
 }
