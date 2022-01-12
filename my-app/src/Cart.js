@@ -21,6 +21,7 @@ function Cart () {
                     <img className="itemImg" src={item[0]} alt="Item"/>
                     <p className="itemCartName">{item[1]}</p>
                     <p className="itemCartPrice">{item[2]}</p>
+                    <button className='delete'>X</button>
                 </div>
             )) : <h2 className='empty'>Cart is empty</h2>}
             </div>
