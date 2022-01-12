@@ -11,6 +11,9 @@ for(let i = 0; i < cart.length; i++) {
     total += price
 }
 
+function deleteItem(e) {
+    let itemId = e.target.parentNode.childNodes[1].innerHTML
+}
 
 function Cart () {
     return (

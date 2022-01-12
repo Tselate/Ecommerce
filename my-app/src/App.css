@@ -103,13 +103,6 @@ input {
     color:rgb(104, 12, 47);
 }
 
-.delete {
-    background-color: red;
-    padding: 1em;
-    margin-top: 4rem;
-    height: fit-content;
-}
-
 .total {
     text-align: right;
     color:rgb(104, 12, 47);
@@ -188,6 +181,25 @@ input {
     margin-top: 0.5em;
     border-radius: 5px;
     border: 0;
+}
+
+.delete {
+    background-color: red;
+    padding: 1em;
+    margin-top: 4rem;
+    height: fit-content;
+}
+
+.cartBtn:hover, 
+.cartBtn:focus {
+    background-color: #fcb1b1;
+    cursor: pointer;
+}
+
+.delete:hover, 
+.delete:focus {
+    background-color: rgb(119, 4, 4);
+    cursor: pointer;
 }
 
 .cart-container {

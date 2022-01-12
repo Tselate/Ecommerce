@@ -37,12 +37,10 @@ function ProductSearch () {
 
     //Function to add product to cart 
     function addProduct (e) {
-        console.log(e)
         cartItems.push([e.target.parentNode.childNodes[0].src, e.target.parentNode.childNodes[1].innerHTML, e.target.parentNode.childNodes[2].innerHTML])
         sessionStorage.setItem("cartItemKey", JSON.stringify(cartItems))
         alert("Item has been added to your cart.")
        // window.location.reload()
-        //console.log(cartItems)
     }
 
    
