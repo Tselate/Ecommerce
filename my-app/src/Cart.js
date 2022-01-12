@@ -20,9 +20,9 @@ function Cart () {
                 <div className='cart-item'>
                     <img className="itemImg" src={item[0]} alt="Item"/>
                     <p className="itemCartName">{item[1]}</p>
-                    <p className="itemPrice">{item[2]}</p>
+                    <p className="itemCartPrice">{item[2]}</p>
                 </div>
-            )) : <h2>Cart is empty</h2>}
+            )) : <h2 className='empty'>Cart is empty</h2>}
             </div>
             <h3 className='total'>Total: {total === 0 ? 0 : total} </h3>
         </>

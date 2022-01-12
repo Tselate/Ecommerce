@@ -29,7 +29,6 @@ html {
 .loading {
     text-align: center;
     font-size: 3rem;
-    margin: 1em auto;
 }
 
 .searchInput {
@@ -89,7 +88,13 @@ input {
     font-weight: bolder;
 }
 
-.itemCartName {
+.empty{
+    text-align: center;
+    color:rgb(104, 12, 47);
+    margin: 2em;
+}
+
+.itemCartName, .itemCartPrice {
     font-size: 1.5rem;
     margin: 3em 0;
 }

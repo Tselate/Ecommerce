@@ -79,7 +79,7 @@ function ProductSearch () {
                         
             </div>    
 
-            <div className="loading">Loading...</div>
+            
     
            <div className="resultDisplay">
                     {itemsStored[0] ? itemsStored[0].map(item => (
@@ -95,6 +95,7 @@ function ProductSearch () {
                     )) : <div className="loading">Loading...</div>}
 
                </div>
+        
         </div>
     )
 }
