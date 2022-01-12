@@ -8,7 +8,7 @@
 }
 
 html {
-    box-shadow: inset 0px 0px 80px 3px rgb(230, 230, 218);
+    box-shadow: inset 0px 0px 80px 3px #fdf2ed;
     min-height: 100vh;
     overflow: auto;
 }
@@ -21,12 +21,12 @@ html {
 .logo {
     font-style: italic;
     font-weight: bolder;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: rgb(7, 1, 1);
     background:linear-gradient( 1deg,rgb(141, 42, 80), transparent 10%) top;
 }
 
-.initialMessage {
+.loading {
     text-align: center;
     font-size: 3rem;
     margin: 1em auto;
@@ -88,6 +88,17 @@ input {
     color:rgb(104, 12, 47);
     font-weight: bolder;
 }
+
+.itemCartName {
+    font-size: 1.5rem;
+    margin: 3em 0;
+}
+
+.total {
+    text-align: right;
+    color:rgb(104, 12, 47);
+    margin-right: 1em;
+}
 /* ==============
     Layout
 =================*/
@@ -96,23 +107,30 @@ input {
     margin: 0.5em 0;
     padding: 0.2em;
     display: block;
-    text-align: center;
+    text-align: left;
 }
 
 .cart {
-    max-width: 5%;
-    display: inline-block;
+    width: 18%;
+    display: block;
+    float: right;
+}
+
+.header-container > a {
+    width: fit-content;
 }
 
 .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 0.2em 1em;
 }
 
 .form-container {
     display: flex;
-    justify-content:flex-end;
-    align-items: center;
-    margin: 0.2em 1em;
+    justify-content: flex-end;
+    margin-right: 1.5rem;
 }
 
 .search-form {
@@ -148,10 +166,25 @@ input {
 }
 
 .cartBtn {
-    background-color: rebeccapurple;
+    background-color: #e2c0c0;
     padding: 0.3em 0.5em;
     margin-top: 0.5em;
     border-radius: 5px;
+    border: 0;
+}
+
+.cart-container {
+    /* display: flex;
+    justify-content: space-between;
+    margin: 0 auto; */
+}
+
+.cart-item{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5em;
+    padding-left: 5em;
+    margin: 2em auto;
 }
 
 /* ==============

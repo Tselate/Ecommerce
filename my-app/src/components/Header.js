@@ -7,7 +7,7 @@ function Header() {
     return (
         <div className="header-container">
             <Link to="/" style={{ textDecoration: 'none' }}><h6 className="logo">SHAP TIL' U DROP</h6></Link> 
-           
+            <Link to="/cart"><img className="cart" src={cart} alt="cart"/></Link>  
         </div>
     )
 }

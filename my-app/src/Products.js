@@ -76,9 +76,10 @@ function ProductSearch () {
 
                     <button className="searchBtn" type="submit">Search</button>
                </form>   
-               <Link to="/cart"><img className="cart" src={cart} alt="cart"/></Link>           
+                        
             </div>    
 
+            <div className="loading">Loading...</div>
     
            <div className="resultDisplay">
                     {itemsStored[0] ? itemsStored[0].map(item => (
