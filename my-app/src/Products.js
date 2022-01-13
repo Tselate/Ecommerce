@@ -1,6 +1,4 @@
 import React, {useState, useEffect} from "react"
-import {Link} from "react-router-dom"
-import cart from "./components/cart-svgrepo-com.svg"
 
 
 function ProductSearch () {
@@ -40,7 +38,7 @@ function ProductSearch () {
         cartItems.push([e.target.parentNode.childNodes[0].src, e.target.parentNode.childNodes[1].innerHTML, e.target.parentNode.childNodes[2].innerHTML])
         sessionStorage.setItem("cartItemKey", JSON.stringify(cartItems))
         alert("Item has been added to your cart.")
-       // window.location.reload()
+        window.location.reload()
     }
 
    

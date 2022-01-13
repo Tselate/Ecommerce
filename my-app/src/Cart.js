@@ -21,7 +21,7 @@ function deleteItem(e) {
             cart.splice(itemIndex, 1)
             sessionStorage.setItem("cartItemKey", JSON.stringify(cart))
             alert(`${item[1]} has been deleted from your cart.`)
-            //window.location.reload()
+            window.location.reload()
         }
         return (
             <h1>{null}</h1>
@@ -36,7 +36,7 @@ function pay() {
         cart.length = 0
         sessionStorage.setItem("cartItemKey", JSON.stringify(cart))
         alert("All of your items have been payed for.")
-        //window.location.reload()
+        window.location.reload()
     }else {
         alert("You have 0 items in your cart.")
     }
