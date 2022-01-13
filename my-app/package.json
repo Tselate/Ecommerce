@@ -32,7 +32,6 @@
       "not dead",
       "not op_mini all"
     ],
-    "homepage": "https://tselate.github.io/Ecommerce/",
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
@@ -41,5 +40,6 @@
   },
   "devDependencies": {
     "gh-pages": "^3.2.3"
-  }
+  }, 
+  "homepage": "https://tselate.github.io/Ecommerce/"
 }
