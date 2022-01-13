@@ -32,7 +32,7 @@ function deleteItem(e) {
 
 //Clear car by clicking pay
 function pay() {
-    if(cart.length > 1) {
+    if(cart.length > 0) {
         cart.length = 0
         sessionStorage.setItem("cartItemKey", JSON.stringify(cart))
         alert("All of your items have been payed for.")
